@@ -37,7 +37,17 @@ module.exports = {
               // ------------------------------------------
               // sourceMap: true
 
-              root: '../../../assets'
+              // root: ''
+
+              // minimize: true,
+              // sourceMap: true,
+              // we'd better do not use alias
+              // alias: {
+              //   "alias$": "../alias/"
+              // }
+              // .src-mods-mod2__haha--2AMUF {}
+              // localIdentName: '[path][name]__[local]--[hash:base64:5]'
+              localIdentName: '[local]___[hash:base64:6]'
             }
           }
         ]

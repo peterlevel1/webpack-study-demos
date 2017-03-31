@@ -10,6 +10,5 @@
   width: 20px;
   height: 20px;
   background-color: blue;
-  background-image: url(/logo-20-20.png);
+  background-image: url('../../../assets/logo-20-20.png');
 }
-
