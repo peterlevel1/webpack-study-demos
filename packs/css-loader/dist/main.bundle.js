@@ -63,11 +63,28 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 13);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n", ""]);
+
+// exports
+exports.locals = {
+	"color1": "#f0f",
+	"color2": "#ff0"
+};
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {/*
@@ -146,10 +163,10 @@ function toComment(sourceMap) {
   return '/*# ' + data + ' */';
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16).Buffer))
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -186,7 +203,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(9);
+	fixUrls = __webpack_require__(10);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -445,16 +462,16 @@ function updateLink(linkElement, options, obj) {
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(6);
+var content = __webpack_require__(7);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(1)(content, {});
+var update = __webpack_require__(2)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -471,16 +488,16 @@ if(false) {
 }
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(4);
+var content = __webpack_require__(5);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(1)(content, {});
+var update = __webpack_require__(2)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -497,10 +514,10 @@ if(false) {
 }
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(0)(undefined);
+exports = module.exports = __webpack_require__(1)(undefined);
 // imports
 
 
@@ -513,37 +530,49 @@ exports.locals = {
 };
 
 /***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var css = __webpack_require__(2);
-var cssMod1 = __webpack_require__(3);
-__webpack_require__(10);
-__webpack_require__(11);
-
-
-/***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-exports.i(__webpack_require__(4), "");
+var css = __webpack_require__(3);
+var cssMod1 = __webpack_require__(4);
+__webpack_require__(11);
+__webpack_require__(12);
 
-// module
-exports.push([module.i, ".div2___2W1_ZV {\n  margin-top: 20px;\n  height: 200px;\n  background-color: red;\n}\n\n.emoji01___2CFpal {\n  width: 20px;\n  height: 20px;\n  background-color: blue;\n  background-image: url(" + __webpack_require__(12) + ");\n}\n\n", ""]);
-
-// exports
-exports.locals = {
-	"div2": "div2___2W1_ZV",
-	"emoji01": "emoji01___2CFpal"
-};
 
 /***/ }),
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(0)(undefined);
+exports = module.exports = __webpack_require__(1)(undefined);
+// imports
+exports.i(__webpack_require__(5), "");
+exports.i(__webpack_require__(0), undefined);
+
+// module
+exports.push([module.i, ".div2___2W1_ZV {\n  margin-top: 20px;\n  height: 200px;\n  background-color: red;\n}\n\n.emoji01___2CFpal {\n  width: 20px;\n  height: 20px;\n  background-color: blue;\n  background-image: url(" + __webpack_require__(13) + ");\n}\n\n.blue___9IvHaY {\n  color: #0c77f8;\n}\n\n.c1___1GEvOQ {\n  color: " + __webpack_require__(0).locals["color1"] + ";\n}\n\n.c2___1BWzx2 {\n  color: " + __webpack_require__(0).locals["color2"] + ";\n}\n\n/* .ooo___3pF5_D .ppp .iii */\n.ooo___3pF5_D .ppp .iii {\n  height: 200px;\n}\n\n/* .ooo___3pF5_D .ppp .iii___1kc0X0 */\n.ooo___3pF5_D .ppp .iii___1kc0X0 {\n  height: 200px;\n}\n\n.aaaaa___1E3t9y {\n  color: green;\n  background: red;\n}\n\n/* keyword: composes */\n.bbbbb___1cEOuO {\n  color: yellow;\n}\n", ""]);
+
+// exports
+exports.locals = {
+	"color03": "#0c77f8",
+	"colors": "\"./mods/theme.css\"",
+	"color1": "" + __webpack_require__(0).locals["color1"] + "",
+	"color2": "" + __webpack_require__(0).locals["color2"] + "",
+	"div2": "div2___2W1_ZV",
+	"emoji01": "emoji01___2CFpal",
+	"blue": "blue___9IvHaY",
+	"c1": "c1___1GEvOQ",
+	"c2": "c2___1BWzx2",
+	"ooo": "ooo___3pF5_D",
+	"iii": "iii___1kc0X0",
+	"aaaaa": "aaaaa___1E3t9y",
+	"bbbbb": "bbbbb___1cEOuO aaaaa___1E3t9y"
+};
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(undefined);
 // imports
 
 
@@ -556,10 +585,10 @@ exports.locals = {
 };
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(0)(undefined);
+exports = module.exports = __webpack_require__(1)(undefined);
 // imports
 
 
@@ -572,7 +601,7 @@ exports.locals = {
 };
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports) {
 
 
@@ -667,16 +696,16 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(7);
+var content = __webpack_require__(8);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(1)(content, {});
+var update = __webpack_require__(2)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -693,16 +722,16 @@ if(false) {
 }
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(8);
+var content = __webpack_require__(9);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(1)(content, {});
+var update = __webpack_require__(2)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -719,19 +748,19 @@ if(false) {
 }
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAfFJREFUOBGNlE0oRFEUxw0pySBDLGiSjxTCQilhYaGsbKzIwsfeTslSspmVbITIwpIiKSwoibARJWyQWJiFYaIwfud5Z7ruDObU753P+b/37n13kpL+sUgkkmmOkOdCqVlLOOaHARDbh1bYkwTbTUiEwRZwngjfDb9ZwoInKNxDL6TDOLyCbbsUvHAN01Ab88QU0+AT1A4JGqEElrToehXUcjCeYCrdR50w/CJxEXQaNVvw5Ycgg1WwZfzADhco5EDIbdiCb9R7IMURJrhxB9UFCdYhDCOQLIP4YpiAZZA1tG1TBS/czjt+EnxQCI6QM2Rd6HVBjKngDB155WqohW1YsTSiKT35uOXmph2TNKlgFkkeTMEHiJ1HFayAXr4z8X15wA2ALIE3mUsq831wAQOgr/lMHNc8Hs8DDSEA5fAG8gCdstArYNsdhQrwMBRj1DNAdr0B5FiqzYpgEZxpxfWyHn64hTHwiSq+ANZA1m8HzINAGplz7k4gdxyWimsqqPkRgcxcasHyr+RyTL2OoFxI6o0hW/CJXh1UwoYxp+GqCukGSB7WYhwvdz6EQeiCDrgCtWwNooLs3CnFFpiHax0wvMz2g3wNZVADQxCCA/jbeBe/vk8cL2e3WRTwslH//4Mz5AcxOc+j0A7nEIS23x7nC3ntZW6IycRxAAAAAElFTkSuQmCC"
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(5)
+__webpack_require__(6)
 
-var css = __webpack_require__(2);
-var cssMod1 = __webpack_require__(3);
+var css = __webpack_require__(3);
+var cssMod1 = __webpack_require__(4);
 
 module.exports = "hello world !"
 
@@ -752,7 +781,7 @@ document.querySelector(".emoji01").setAttribute("class", css.emoji01)
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -873,7 +902,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -887,9 +916,9 @@ function fromByteArray (uint8) {
 
 
 
-var base64 = __webpack_require__(14)
-var ieee754 = __webpack_require__(16)
-var isArray = __webpack_require__(17)
+var base64 = __webpack_require__(15)
+var ieee754 = __webpack_require__(17)
+var isArray = __webpack_require__(18)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -2667,10 +2696,10 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -2760,7 +2789,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -2771,7 +2800,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports) {
 
 var g;
