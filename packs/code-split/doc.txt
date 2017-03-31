@@ -1,0 +1,87 @@
+TODO bugfix at
+webpack/lib/optimize/CommonsChunkPlugin.js
+line 334:
+add if (...) {} there to promise the logic passing
+------------------------------------------------------------
+
+CommonsChunkPlugin
+
+Edit this Page
+new webpack.optimize.CommonsChunkPlugin(options)
+The CommonsChunkPlugin is an opt-in feature that creates a separate file (known as a chunk),
+consisting of common modules shared between multiple entry points.
+
+By separating common modules from bundles, the resulting chunked file can be loaded once initially,
+and stored in cache for later use. This results in pagespeed optimizations
+as the browser can quickly serve the shared code from cache,
+rather than being forced to load a larger bundle whenever a new page is visited.
+
+Options
+
+{
+  name: string, // or
+  names: string[],
+  // The chunk name of the commons chunk. An existing chunk can be selected by passing a name of an existing chunk.
+  // If an array of strings is passed this is equal to invoking the plugin multiple times for each chunk name.
+  // If omitted and `options.async` or `options.children` is set all chunks are used,
+  // otherwise `options.filename` is used as chunk name.
+
+  filename: string,
+  // The filename template for the commons chunk. Can contain the same placeholder as `output.filename`.
+  // If omitted the original filename is not modified (usually `output.filename` or `output.chunkFilename`).
+
+  minChunks: number|Infinity|function(module, count) -> boolean,
+  // The minimum number of chunks which need to contain a module before it's moved into the commons chunk.
+  // The number must be greater than or equal 2 and lower than or equal to the number of chunks.
+  // Passing `Infinity` just creates the commons chunk, but moves no modules into it.
+  // By providing a `function` you can add custom logic. (Defaults to the number of chunks)
+
+  chunks: string[],
+  // Select the source chunks by chunk names. The chunk must be a child of the commons chunk.
+  // If omitted all entry chunks are selected.
+
+  children: boolean,
+  // If `true` all children of the commons chunk are selected
+
+  async: boolean|string,
+  // If `true` a new async commons chunk is created as child of `options.name` and sibling of `options.chunks`.
+  // It is loaded in parallel with `options.chunks`. It is possible to change the name of the output file
+  // by providing the desired string instead of `true`.
+
+  minSize: number,
+  // Minimum size of all common module before a commons chunk is created.
+}
+The deprecated webpack 1 constructor
+
+new webpack.optimize.CommonsChunkPlugin(
+  options,
+  filenameTemplate,
+  selectedChunks,
+  minChunks
+)
+
+is no longer supported. Use a corresponding options object instead.
+
+Examples
+
+Commons chunk for entries
+
+Generate an extra chunk, which contains common modules shared between entry points.
+
+new webpack.optimize.CommonsChunkPlugin({
+  name: "commons",
+  // (the commons chunk name)
+
+  filename: "commons.js",
+  // (the filename of the commons chunk)
+
+  // minChunks: 3,
+  // (Modules must be shared between 3 entries)
+
+  // chunks: ["pageA", "pageB"],
+  // (Only use these entries)
+})
+You must load the generated chunk before the entry point:
+
+<script src="commons.js" charset="utf-8"></script>
+<script src="entry.bundle.js" charset="utf-8"></script>
