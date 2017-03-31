@@ -4,9 +4,6 @@
 #webstorm
 .idea
 
-#npm debug
-npm-debug.log*
-
 # Logs
 logs
 *.log
