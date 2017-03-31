@@ -1,5 +1,17 @@
 
 ### issues 01
+1.
+  src/index.css
+    if :global not added before .emoji01,
+    webpack compilation would fail as the root option with css-loader options
+  webpack.config.js
+    css-loader options:
+      root: "../../../assets"
+2.
+  src/index.css
+    if :global added before .emoji01,
+  src/index.js:
+    css would only take the .div1 as attrs
 
 src/index.css
 ```css
@@ -82,8 +94,3 @@ document.querySelector(".emoji01").setAttribute("class", css.emoji01)
 
 ```
 
-issues:
-1. if :global not added before .emoji01, webpack would compile would fail
-2. if :global added before .emoji01,
-    index.js:
-    css would only take the .div1 as attrs
