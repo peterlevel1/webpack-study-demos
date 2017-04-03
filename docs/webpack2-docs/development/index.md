@@ -6,7 +6,7 @@ contributors:
 
 These guides cover what you need to know in order to develop webpack.
 
-*   [Release Process](./release-process)
-*   [Plugin Patterns](./plugin-patterns)
-*   [How To Write A Plugin](./how-to-write-a-plugin)
-*   [How To Write A Loader](./how-to-write-a-loader)
+*   [Release Process](./release-process.md)
+*   [Plugin Patterns](./plugin-patterns.md)
+*   [How To Write A Plugin](./how-to-write-a-plugin.md)
+*   [How To Write A Loader](./how-to-write-a-loader.md)

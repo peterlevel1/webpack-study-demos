@@ -22,7 +22,7 @@ npm install --save-dev css-loader
 npm install --save-dev ts-loader
 ```
 
-Secondly, configure in your `webpack.config.js` that for every `.css` file the [`css-loader`](/loaders/css-loader) should be used and analogously for `.ts` files and the `ts-loader`:
+Secondly, configure in your `webpack.config.js` that for every `.css` file the [`css-loader`](../loaders/css-loader) should be used and analogously for `.ts` files and the `ts-loader`:
 
 **webpack.config.js**
 
