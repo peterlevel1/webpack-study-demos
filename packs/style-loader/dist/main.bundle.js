@@ -63,28 +63,53 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(3)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!./index.css", function() {
+			var newContent = require("!!../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!./index.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n", ""]);
+exports.push([module.i, ".div1___2k4b48 {\n  height: 100px;\n  background-color: #f8f;\n}\n", ""]);
 
 // exports
 exports.locals = {
-	"color1": "#f0f",
-	"color2": "#ff0"
+	"div1": "div1___2k4b48"
 };
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {/*
@@ -163,10 +188,10 @@ function toComment(sourceMap) {
   return '/*# ' + data + ' */';
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7).Buffer))
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -203,7 +228,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(10);
+	fixUrls = __webpack_require__(4);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -462,146 +487,7 @@ function updateLink(linkElement, options, obj) {
 
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(7);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!./index.css", function() {
-			var newContent = require("!!../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!./index.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
 /* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(5);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!./mod1.css", function() {
-			var newContent = require("!!../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!./mod1.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".div1___2sJ0q5 {\n  margin-top: 20px;\n  height: 200px;\n  background-color: green;\n}\n\n\n", ""]);
-
-// exports
-exports.locals = {
-	"div1": "div1___2sJ0q5"
-};
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var css = __webpack_require__(3);
-var cssMod1 = __webpack_require__(4);
-__webpack_require__(11);
-__webpack_require__(12);
-
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)(undefined);
-// imports
-exports.i(__webpack_require__(5), "");
-exports.i(__webpack_require__(0), undefined);
-
-// module
-exports.push([module.i, ".div2___2W1_ZV {\n  margin-top: 20px;\n  height: 200px;\n  background-color: red;\n}\n\n.emoji01___2CFpal {\n  width: 20px;\n  height: 20px;\n  background-color: blue;\n  background-image: url(" + __webpack_require__(13) + ");\n}\n\n.blue___9IvHaY {\n  color: #0c77f8;\n}\n\n.c1___1GEvOQ {\n  color: " + __webpack_require__(0).locals["color1"] + ";\n}\n\n.c2___1BWzx2 {\n  color: " + __webpack_require__(0).locals["color2"] + ";\n}\n\n/* .ooo___3pF5_D .ppp .iii */\n.ooo___3pF5_D .ppp .iii {\n  height: 200px;\n}\n\n/* .ooo___3pF5_D .ppp .iii___1kc0X0 */\n.ooo___3pF5_D .ppp .iii___1kc0X0 {\n  height: 200px;\n}\n\n.aaaaa___1E3t9y {\n  color: green;\n  background: red;\n}\n\n/* keyword: composes */\n.bbbbb___1cEOuO {\n  color: yellow;\n}\n", ""]);
-
-// exports
-exports.locals = {
-	"color03": "#0c77f8",
-	"colors": "\"./mods/theme.css\"",
-	"color1": "" + __webpack_require__(0).locals["color1"] + "",
-	"color2": "" + __webpack_require__(0).locals["color2"] + "",
-	"div2": "div2___2W1_ZV",
-	"emoji01": "emoji01___2CFpal",
-	"blue": "blue___9IvHaY",
-	"c1": "c1___1GEvOQ",
-	"c2": "c2___1BWzx2",
-	"ooo": "ooo___3pF5_D",
-	"iii": "iii___1kc0X0",
-	"aaaaa": "aaaaa___1E3t9y",
-	"bbbbb": "bbbbb___1cEOuO aaaaa___1E3t9y"
-};
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".haha___2AMUFi {\n  height: 10px;\n}", ""]);
-
-// exports
-exports.locals = {
-	"haha": "haha___2AMUFi"
-};
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".haha2___1t1Tzo {\n  height: 20px;\n}\n", ""]);
-
-// exports
-exports.locals = {
-	"haha2": "haha2___1t1Tzo"
-};
-
-/***/ }),
-/* 10 */
 /***/ (function(module, exports) {
 
 
@@ -696,92 +582,19 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 11 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(8);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!./mod2.css", function() {
-			var newContent = require("!!../../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!./mod2.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(9);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!./mod3.css", function() {
-			var newContent = require("!!../../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!./mod3.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAfFJREFUOBGNlE0oRFEUxw0pySBDLGiSjxTCQilhYaGsbKzIwsfeTslSspmVbITIwpIiKSwoibARJWyQWJiFYaIwfud5Z7ruDObU753P+b/37n13kpL+sUgkkmmOkOdCqVlLOOaHARDbh1bYkwTbTUiEwRZwngjfDb9ZwoInKNxDL6TDOLyCbbsUvHAN01Ab88QU0+AT1A4JGqEElrToehXUcjCeYCrdR50w/CJxEXQaNVvw5Ycgg1WwZfzADhco5EDIbdiCb9R7IMURJrhxB9UFCdYhDCOQLIP4YpiAZZA1tG1TBS/czjt+EnxQCI6QM2Rd6HVBjKngDB155WqohW1YsTSiKT35uOXmph2TNKlgFkkeTMEHiJ1HFayAXr4z8X15wA2ALIE3mUsq831wAQOgr/lMHNc8Hs8DDSEA5fAG8gCdstArYNsdhQrwMBRj1DNAdr0B5FiqzYpgEZxpxfWyHn64hTHwiSq+ANZA1m8HzINAGplz7k4gdxyWimsqqPkRgcxcasHyr+RyTL2OoFxI6o0hW/CJXh1UwoYxp+GqCukGSB7WYhwvdz6EQeiCDrgCtWwNooLs3CnFFpiHax0wvMz2g3wNZVADQxCCA/jbeBe/vk8cL2e3WRTwslH//4Mz5AcxOc+j0A7nEIS23x7nC3ntZW6IycRxAAAAAElFTkSuQmCC"
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(6)
-
-var css = __webpack_require__(3);
-var cssMod1 = __webpack_require__(4);
+var cls = __webpack_require__(0)
 
 module.exports = "hello world !"
 
-// no css modules, this would be an empty object
-// -----------------------------------------
-// if css modules enabled
-// the classnames would be within this object
-console.log(css);
-console.log(cssMod1);
+document.querySelector(".div1").setAttribute("class", cls.div1)
 
-// what the difference between css-loader with dva is that
-// dva auto handle this step, only req the css would be fine
-// so css.div1 is undefined here
-document.querySelector(".div1").setAttribute("class", cssMod1.div1)
-
-document.querySelector(".div2").setAttribute("class", css.div2)
-document.querySelector(".emoji01").setAttribute("class", css.emoji01)
 
 
 /***/ }),
-/* 15 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -902,7 +715,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 16 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -916,9 +729,9 @@ function fromByteArray (uint8) {
 
 
 
-var base64 = __webpack_require__(15)
-var ieee754 = __webpack_require__(17)
-var isArray = __webpack_require__(18)
+var base64 = __webpack_require__(6)
+var ieee754 = __webpack_require__(8)
+var isArray = __webpack_require__(9)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -2696,10 +2509,10 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
 
 /***/ }),
-/* 17 */
+/* 8 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -2789,7 +2602,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 18 */
+/* 9 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -2800,7 +2613,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 19 */
+/* 10 */
 /***/ (function(module, exports) {
 
 var g;

@@ -53,6 +53,10 @@ result:
 @value blue, red, green from colors;
 
 /* :global */
-/* :local ---- default*/
+/* :local */
+.ooo :global .ppp .iii {}
+.ooo :global .ppp :local .iii {}
 ```
+#### keyword: composes, would not take the effects
+
 
