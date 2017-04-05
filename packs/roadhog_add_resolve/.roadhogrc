@@ -1,25 +1,5 @@
 {
   "entry": "src/index.js",
-  "publicPath": "/bigDataDevelopPlatformWeb/",
-  "outputPath": "./dist",
-  "env": {
-    "development": {
-      "extraBabelPlugins": [
-        "dva-hmr",
-        "transform-runtime",
-        ["import", { "libraryName": "antd", "style": "css" }]
-      ]
-    },
-    "production": {
-      "extraBabelPlugins": [
-        "transform-runtime",
-        ["import", { "libraryName": "antd", "style": "css" }]
-      ]
-    }
-  },
-  "extraBabelPlugins": [
-    "transform-runtime",
-    "dva-hmr",
-    ["import", { "libraryName": "antd", "libarayDirectory": "lib", "style": "css" }]
-  ]
+  "publicPath": "/",
+  "outputPath": "dist"
 }
