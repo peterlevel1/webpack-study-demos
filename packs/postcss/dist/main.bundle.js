@@ -82,8 +82,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!../../../node_modules/.npminstall/postcss-loader/1.3.3/postcss-loader/index.js!./index.css", function() {
-			var newContent = require("!!../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!../../../node_modules/.npminstall/postcss-loader/1.3.3/postcss-loader/index.js!./index.css");
+		module.hot.accept("!!../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!../../../node_modules/.npminstall/postcss-loader/1.3.3/postcss-loader/index.js??ref--0-2!./index.css", function() {
+			var newContent = require("!!../../../node_modules/.npminstall/css-loader/0.28.0/css-loader/index.js??ref--0-1!../../../node_modules/.npminstall/postcss-loader/1.3.3/postcss-loader/index.js??ref--0-2!./index.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -101,7 +101,7 @@ exports = module.exports = __webpack_require__(2)(undefined);
 
 
 // module
-exports.push([module.i, ".div1 {\n  -webkit-transition: all 0.5s;\n  transition: all 0.5s;\n}\n", ""]);
+exports.push([module.i, ".div1 {\n  transition: all 0.5s;\n}\n", ""]);
 
 // exports
 
