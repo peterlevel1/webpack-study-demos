@@ -1,2 +1,4 @@
 # webpack-study-demos
-webpack study demos
+
+demos for display webpack usages
+
