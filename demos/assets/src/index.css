@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/fonts/王汉宗细新宋简.ttf');
+}
+
+@font-face {
+  font-family: 'PingFang';
+  src: url('./assets/fonts/PingFang.ttc');
+}
+
+.hello {
+  font-family: 'MyFont';
+  background: url('./assets/shark-fish.png');
+}
+
+.ping-fang {
+  font-family: 'PingFang';
+}
