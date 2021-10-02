@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "startup:build": "webpack --config ./demos/startup/webpack.config.js",
-    "assets:build": "webpack --config ./demos/assets/webpack.config.js"
+    "assets:build": "webpack --config ./demos/assets/webpack.config.js",
+    "output:build": "webpack --config ./demos/output/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "css-loader": "^6.3.0",
     "csv-loader": "^3.0.3",
     "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
     "json5": "^2.2.0",
     "markdown-loader": "^6.0.0",
     "style-loader": "^3.3.0",
