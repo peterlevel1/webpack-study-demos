@@ -1,0 +1,20 @@
+{
+  "name": "webpack-study-demos",
+  "version": "1.0.0",
+  "description": "demos for display webpack usages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterlevel1/webpack-study-demos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterlevel1/webpack-study-demos/issues"
+  },
+  "homepage": "https://github.com/peterlevel1/webpack-study-demos#readme"
+}
