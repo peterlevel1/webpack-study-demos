@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "startup:build": "webpack --config ./demos/startup/webpack.config.js",
     "assets:build": "webpack --config ./demos/assets/webpack.config.js",
-    "output:build": "webpack --config ./demos/output/webpack.config.js"
+    "output:build": "webpack --config ./demos/output/webpack.config.js",
+    "development:build": "webpack --config ./demos/development/webpack.config.js",
+    "development:watch": "webpack --watch --config ./demos/development/webpack.config.js",
+    "development:devserver": "webpack serve --open --config ./demos/development/webpack-devserver.config.js",
+    "development:server": "node ./demos/development/server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +27,7 @@
   "devDependencies": {
     "css-loader": "^6.3.0",
     "csv-loader": "^3.0.3",
+    "express": "^4.17.1",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
     "json5": "^2.2.0",
@@ -31,6 +36,8 @@
     "toml": "^3.0.0",
     "webpack": "^5.56.0",
     "webpack-cli": "^4.8.0",
+    "webpack-dev-middleware": "^5.2.1",
+    "webpack-dev-server": "^4.3.0",
     "xml-loader": "^1.2.1",
     "yamljs": "^0.3.0"
   },
